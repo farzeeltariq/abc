@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes fananimation {
+            0%{
+                left: 100%;
+                right: 0%;
+            }
+            50%{
+                left: 100%;
+                right: 90%;
+            }
+            75%{
+                left: 100%;
+                right: 0%;
+            }
+            100%{
+                left: 0%;
+                right: 100%;
+            }
+        }
+        body{
+            background-color: aquamarine;
+        }
+     #flaxBox{
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        margin-top: 300px;
+        
+    
+        
+     }
+     .box{
+        width: 70px;
+        height: 70px;
+        background-color: chartreuse;
+        align-items: center;
+        transition:width 2s linear 0s,hight 2s linear 0s;
+        border: solid red;
+        color: white;
+     }
+    .box:hover{
+        background-color: black;
+        width: 100px;
+        height: 100px;
+     }
+     #new{
+        width: 400px;
+        height: 200px;
+        background-color: brown;
+        color: black;
+        position: absolute;
+    top: 10px;
+    left: 50px;
+    transition:width 2s linear 0s,hight 2s linear 0s;
+     }
+     #new:hover{
+        width:800px;
+        height: 400px;
+     }
+     .h1{
+        /* margin-top: 10px;
+    margin-left: 5px; */
+    transition:width 2s linear 0s ,hight 2s linear 0s;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: -77px;
+     }
+     .h1:hover{
+        color: yellow;
+        width: 10px;
+        height: 5px;
+        position: absolute;
+        margin-left: 50px;
+     }
+     .h5{
+        position: relative;
+    left: 140px;
+    top: 100px;
+    transition: left 2s linear 0s, right 2s linear 0s ,opacity 2s linear 0s;
+     }
+     .h5:hover{
+        left:50px;
+        right:50 px;
+        color: red;
+        opacity: 0;
+     }
+     .pix{
+        position: absolute;
+    right: 90px;
+    top: 20px;
+    animation: fananimation left 2s linear 0s;
+    animation-duration: 10s;
+    
+     }
+     .box:hover{
+        left: 360deg;
+        right: 360deg;
+     }
+     
+    </style>
+</head>
+<body> 
+    
+        <img class="pix" src="C:\Users\hp\Downloads/fan.png" alt="">
+    
+    <div id="flaxBox"> 
+        <div id="new">
+            <h1 class="h1">gamica ClOUd</h1>
+            
+        </div>
+    <div class="box">01</div>
+    <div class="box">02</div>
+    <div class="box">03</div>
+    <div class="box">04</div>
+     <div>
+        <h5 class="h5">A Code of Conduct honored<br> by all true barbarian warriors,<br>. requiring excellent coordination with<br> weapons, closeness to nature, awkwardness with women,<br> common sense, and completion of the mission. -<br> Author: Piers Anthony</h5>
+     </div>
+    </div> 
+    
+</body>
+</html>

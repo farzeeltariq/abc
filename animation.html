@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .container{
+            text-align: center;
+            color: white;
+            height: 100vh;
+            width: 100vw;
+            background:linear-gradient(red,green,blue,yellow,pink);
+        }
+
+        .con img{
+         width: 200px;
+         position: absolute;
+         top: 0;
+         left: 0;
+         animation: myanimation 4s linear 0s infinite;
+         transform: scale(-1,1);
+        }
+        .container  img{
+        width:200px;
+        position: absolute;
+     right: 0;
+     margin-top: 200px;
+     margin-left: 200px;
+     margin-right: 550px;
+    
+        /* top: 0; */
+      top: 0;
+        transform:scale(-1,1);
+        animation:meriAnimation 1s linear 0s infinite;
+    }
+    /*  ye chil ddoremonn hai jo lefgt right gommy ga */
+    .child-doremon img{
+        width: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        animation: doremon 3s linear 0s infinite;
+    }
+/*  ye child doremon ki key fram hai  */
+/* @keyframes  doremon{
+     0%{
+        transform: rotate(0deg);
+       transform: rotate(360deg);
+      left: 0;
+      top: 0;
+
+        
+
+     }
+     25%{
+     
+        transform: rotate(0deg);
+       transform: rotate(360deg);
+       top: 0;
+        left: 80%;
+     }
+     50%{
+        transform: rotate(0deg),  rotate(360deg);
+      
+       top: 80%;
+        left: 80%;
+     }
+} */
+
+
+
+
+   
+/*  ye bara cenetr wala doremonn hai */
+    @keyframes meriAnimation {
+        0%{
+          transform: rotate(0deg);
+           
+        }
+        
+        100%{
+            transform: rotate(360deg);
+
+        }
+    }
+    /*  ye left right car hai  */
+    @keyframes myanimation {
+     0%{
+        left: 0;
+        top: 0;
+     }
+     25%{
+        left: 80%;
+        top:0;
+     }
+     50%{
+        left: 80%;
+        top: 80%;
+     }
+     75%{
+        top: 80%;
+        left: 0;
+     }
+
+    }
+     </style>
+    
+</head>
+<body>
+    
+    <div class="container">
+        <h1> Rotation mai left right chezzy move krwana </h1>
+
+        <img src="doremon.png" alt="">
+    </div>
+    <div class="con">
+     <img src="car3.png" alt="">
+    </div>
+    <div class="child-doremon">
+        <!-- <img src="doremon.png" alt=""> -->
+    </div>
+</body>
+</html>
